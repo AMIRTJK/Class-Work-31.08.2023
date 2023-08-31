@@ -1,0 +1,37 @@
+$colorTextRed: #ff0000;
+$colorButton: #00c900;
+$colorWhite: #e5e5e5;
+$styleText: sans-serif;
+$uppercaseText: uppercase;
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  li {
+    list-style-type: none;
+    background-color: $colorTextRed;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: $colorWhite;
+      font-family: $styleText;
+      text-transform: $uppercaseText;
+    }
+  }
+  li:hover {
+    background-color: $colorButton;
+  }
+  h1 {
+    font: {
+      size: 80px;
+      family: sans-serif;
+      style: italic;
+    }
+  }
+  @import "colors.scss";
+}
